@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template: repeat(3,1fr) / repeat(3,1fr);
+        }
+        .circle {
+            grid-area: 2 / 2 / 3 / 3;
+            margin: 0 auto;
+            background: #0B486B;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .circle:hover {
+            /*transform: scale(1.5);*/
+            /*transform: scaleY(1.5);*/
+            transform: scale(1.5,1.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+
+    </div>
+</body>
+</html>
